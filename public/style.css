@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #1f2833;
+}
+
+h1{
+    color: #66FCF1;
+}
+
+.box {
+    margin: auto;
+    width: 500px;
+    padding: 40px;
+    background: #0b0c10;
+    border-radius: 10%;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 250px;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #66FCF1
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #66FCF1;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #66FCF1
+}
+
+.forgot {
+    text-decoration: underline
+}
+
+#chat {
+    margin-top: 50px;
+    background: #0b0c10;
+    color: white;
+    height: 80vh;
+    overflow-y: scroll;
+    scroll-margin-bottom: 10px;
+}
+
+.msg {
+    width: 100%;
+    bottom: -1px;
+    left: -1px;
+    background: #0b0c10;
+    color: white;
+    padding: 10px;
+}
+
+#message_form #m {
+    width: 79%;
+    background: none;
+    border: 2px solid #66FCF1;
+    border-radius: 5px;
+    color: white;
+}
+
+button{
+    min-width: 20%;
+    background: none;
+    text-align: center;
+    border: 2px solid #66FCF1;
+    border-radius: 5px;
+    color: white;
+}
+
+#messages {
+    padding: 20px
+}
+
+#messages li {
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+#users{
+    list-style-type: none;
+    padding: 0;
+}
+
+#users li{
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #66FCF1;
+    box-sizing: border-box;
+}
+
+li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#invite {
+    margin: 30px 30px;
+    display: none;
+}
+
+.logout {
+    min-width: 15%;
+    margin:auto;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #66FCF1;
+    background: #0b0c10;
+    bottom: -1px;
+}
+
+.logout a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.logout:hover{
+    background-color: #1f2833;
+}

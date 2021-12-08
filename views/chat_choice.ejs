@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+            crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" type="text/css" href="/chat_choice.css"/>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Chat Choice</title>
+
+</head>
+<body>
+<div class="join-container">
+    <header class="join-header">
+        <h1>Welcome <%= user.username%></h1>
+        <button class='logout' ><a href="/logout">Logout</a></button>
+    </header>
+    <main class="join-main">
+        <div class="row align-items-start justify-content-evenly w-100">
+            <div class='col-xl-5'>
+                <form action="/enterRoom" method='POST' class="box">
+                    <div class="form-control">
+                        <label for="room">Room</label>
+                        <ul name="rooms" id="rooms">
+        
+                            <%  chats.chats.forEach(chat => { %>
+        
+                                <li value="<%= chat.name %>"><%= chat.name %></li>
+        
+                            <% }); %>
+                        </ul>
+                    </div>
+                    <p>Insira a sala a que se quer juntar.</p>
+                    <input id='room' name='room' type="text" placeholder="Sala" required>
+                    <button type="submit" class="btn">Join Chat</button>
+                </form>
+            </div>
+            
+            <div class='col-xl-5'>
+                <form action='/createRoom' method='POST' class="box">
+                    <h1>Criar uma sala</h1>
+                    <div>
+                        <label for="chatroom">
+                            <input type="text"
+                                name="chatroom"
+                                id="chatroom"
+                                placeholder="Enter name for chatroom..."
+                                required />
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Create Chat</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+</div>
+
+</body>
+</html>

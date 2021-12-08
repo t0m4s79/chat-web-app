@@ -1,0 +1,112 @@
+Para inciar a aplicação deve-se:
+
+1-Abrir folder com programa
+
+2-No terminal escrever npm install ou npm i
+
+3-Após a instalação das packages, executar o comando node app.js. (Também se pode executar o comando npm run devStart)
+
+4-Abrir o browser no endereço localhost:3000
+
+5-Pode-se:
+    a) Efetuar registo.
+        Após registo, deve fazer login.
+    b) Fazer login com uma conta já existente(verificar abaixo algumas das contas criadas)
+
+6-É apresentada a página dos chats do utilizador. Pode:
+    a) Criar um chat.
+    b) Juntar-se a um chat já criado(este é apresentado na lista dos chats)
+
+7-Se criar um chat, é admitido como administrador da sala, podendo assim convidar outros para a sua sala.
+
+8-Pode ser convidado para um chat. Neste caso, não tem os privilégios de administrador(não pode convidar outros utilizadores).
+
+9-Quando num chat, pode mandar mensagens para o chat.
+
+10-Em qualquer página, é dada a possibilidade de voltar atrás ou de dar logout.
+
+11-Entre qualquer operação é recomendado fazer refresh na página(sendo que alguns dos passos são realizados de forma assíncrona).
+
+--------------------------------------------------------------------------------------
+Contas na base de dados
+
+user: andre
+pass: andre
+
+user: tomas
+pass: tomas
+
+user: correia
+pass: correia
+
+user: joao
+pass: joao
+
+--------------------------------------------------------------------------
+Dependências usadas no projeto:
+
+"connect-mongo": "^4.4.1",
+"crypto": "^1.0.1",
+"dotenv": "^9.0.1",
+"ejs": "^3.1.6",
+"express": "^4.17.1",
+"express-session": "^1.17.1",
+"jquery": "^3.6.0",
+"moment": "^2.29.1",
+"mongodb": "^3.6.5",
+"mongoose": "^5.12.7",
+"multer": "^1.4.2",
+"nodemon": "^2.0.7",
+"passport": "^0.4.1",
+"passport-local": "^1.0.0",
+"router": "^1.3.5",
+"socket.io": "^4.0.2"
+
+---------------------------------------------------------------------------
+
+Referências usadas como ajuda na realização do projeto
+
+https://docs.mongodb.com/
+https://docs.mongodb.com/manual/tutorial/query-array-of-documents/
+
+https://mongoosejs.com/docs/queries.html
+
+https://socket.io/
+
+https://socket.io/get-started/private-messaging-part-2/
+
+https://freefrontend.com/bootstrap-login-forms/
+
+http://geeksforgeeks.org/
+https://www.w3schools.com/
+https://github.com/
+https://stackoverflow.com/
+https://www.google.com/
+
+https://www.tutorialspoint.com/how-to-search-in-array-of-object-in-mongodb
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tolocalestring
+
+https://visme.co/blog/website-color-schemes/
+
+https://makitweb.com/make-a-dropdown-with-search-box-using-jquery/
+
+https://github.com/Automattic/mongoose/issues/1377#issuecomment-15911192
+
+https://www.youtube.com/watch?v=NwHq1-FkQpU
+
+https://youtu.be/-SpWOpdzUKw?t=471
+
+https://www.youtube.com/watch?v=jD7FnbI76Hg&t=624s&ab_channel=TraversyMedia
+
+https://www.youtube.com/watch?v=F-sFp_AvHc8&ab_channel=freeCodeCamp.org
+
+https://www.youtube.com/watch?v=8Y6mWhcdSUM
+
+https://www.youtube.com/watch?v=UymGJnv-WsE
+
+https://www.youtube.com/watch?v=esy4nRuShl8&list=PLZlA0Gpn_vH8jbFkBjOuFjhxANC63OmXM&index=6
+
+https://www.youtube.com/watch?v=-RCnNyD0L-s
+
+https://stackoverflow.com/questions/25505778/automatically-scroll-down-chat-div/41202430
